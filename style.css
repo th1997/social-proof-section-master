@@ -13,22 +13,135 @@ body{
     background-repeat: no-repeat no-repeat;
     background-position: top 0 left 0, right 0 bottom 0;
     min-height: 100vh;
+    font-family: Spartan;
+    font-size: 15px;
 }
 
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-left: 10%;
+    margin-right: 7%;
 }
 
 .rates_and_title{
     display: flex;
-    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.title{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-right: 45%;
+    font-size: 23px;
+    margin-bottom: 1%;
+}
+
+.Title_text{
+    padding-right: 30%;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.rates{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    padding-right: 27%;
+}
+
+.bgRates{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    margin-bottom: 12%;
+    border-radius: 10px 10px;
+    margin-right: -210%;
+}
+
+.rate_ReportGuru{
+    margin-left: 35%;
+    margin-right: -245%;
+}
+
+.rate_BestTech{
+    margin-left: 70%;
+    margin-right: -280%;
+}
+
+.bgRates::before{
+    content: "";
+    background-image: url("images/icon-star.svg");
+    background-repeat: space;
+    padding-left: 22%;
+    margin-left: 7%;
+    margin-right: 8%;
 }
 
 .comments{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cardBG{
+    display: grid;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px 10px;
+    padding-bottom: 5%;
+    margin-right: 3%;
+    grid-template-columns: [first] 10% [col2] 15% [col3] 69% [end];
+    grid-template-rows: [row1] 20% [row2] 14% [row3] 9% [row4] 15% [row5] 70% [row6] 20% [last-line];
+}
+
+.pp img{
+    border-radius: 50%;
+    width: 70%;    
+}
+
+.pp{
+    grid-column-start: col2;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+
+
+.name{
+    grid-column-start: col3;
+    grid-row-start: row2;
+    color: white;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.verified{
+    grid-column-start: col3;
+    grid-row-start: row3;
+    color: hsl(333, 80%, 67%);
+}
+
+.com{
+    grid-column-start: col2;
+    grid-column-end: end;
+    grid-row-start: row5;
+    grid-row-end: last-line;
+    color: white;
+    line-height: 23px;
+}
+
+.com2{
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+
+.com3{
+    margin-top: 4%;
+    margin-bottom: -4%;
 }
 
 footer { 
