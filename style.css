@@ -150,6 +150,11 @@ main{
         background-repeat: no-repeat no-repeat;
     }
 
+    main{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
     .rates_and_title{
         flex-direction: column;
         text-align: center;
@@ -159,17 +164,41 @@ main{
         padding: 0;
     }
 
+    .title{
+        margin-bottom: 10%;
+        margin-top: 27% ;
+    }
+
+    .Title_text{
+        margin-bottom: 12%;
+    }
+
     .rates{
         margin: 0;
         padding: 0;
+        margin-bottom: 7%;
     }
     
     .bgRates{
         flex-direction: column;
+        padding-bottom: 5%;
+        padding-top: 5%;
     }
 
     .rate_ReportGuru, .rate_BestTech, .rate_Reviews{
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+
+    .bgRates::before{
+        content: "";
+        background-image: url("images/icon-star.svg");
+        background-repeat: space;
+        padding-top: 6%;
+        margin-left: 34%;
+        margin-right: 34%;
+        margin-bottom: 4%;
     }
 
     .comments{
