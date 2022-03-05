@@ -110,7 +110,6 @@ main{
     grid-row-end: row3;
 }
 
-
 .name{
     grid-column-start: col3;
     grid-row-start: row2;
@@ -143,6 +142,36 @@ main{
     margin-top: 4%;
     margin-bottom: -4%;
 }
+
+
+@media screen and (max-width: 376px){
+    body{
+        background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .rates_and_title{
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    .rates{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bgRates{
+        margin: 0;
+        padding: 0;
+    }
+
+    .comments{
+        flex-direction: column;
+        justify-content: space-around;
+    }    
+}
+
 
 footer { 
     position: absolute;
