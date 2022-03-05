@@ -158,7 +158,6 @@ footer a { color: hsl(228, 45%, 44%) }
 @media screen and (max-width: 376px){
     body{
         background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
-        background-repeat: no-repeat no-repeat;
         flex-direction: column;
     }
 
@@ -204,9 +203,6 @@ footer a { color: hsl(228, 45%, 44%) }
     }
 
     .bgRates::before{
-        content: "";
-        background-image: url("images/icon-star.svg");
-        background-repeat: space;
         padding-top: 6%;
         margin-left: 36%;
         margin-right: 36%;
