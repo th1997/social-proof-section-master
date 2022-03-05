@@ -152,8 +152,11 @@ main{
 
     .rates_and_title{
         flex-direction: column;
-        padding: 0;
         text-align: center;
+    }
+
+    .title, .Title_text{
+        padding: 0;
     }
 
     .rates{
@@ -162,8 +165,11 @@ main{
     }
     
     .bgRates{
+        flex-direction: column;
+    }
+
+    .rate_ReportGuru, .rate_BestTech, .rate_Reviews{
         margin: 0;
-        padding: 0;
     }
 
     .comments{
